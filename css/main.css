@@ -2,6 +2,7 @@ html, body {
    margin: 0;
    padding: 0;
    width: 100;
+   /*background-color: blue;*/
 }
 
 body {
@@ -12,17 +13,22 @@ body {
    margin-bottom: 80px;
 }
 
+.heading-title {
+   font-family:Arial;
+}
+
 .header h1 {
    color: #000;
    font-size: 30px;
    font-weight: bold;
    text-transform: lowercase;
+   position: relative;
 }
 
 .card {
    overflow: hidden;
    position: relative;
-   width: 80%;
+   width: 18%;
    display: inline-block;
    margin: 0 5px;
    position: relative;
@@ -75,3 +81,39 @@ body {
 .btn-downloaded {
  background-color: #ababab ;
  color: #3f3f3f ;
+
+ /*ratings*/
+
+ .rating {
+ text-align: right;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+ margin: 30px 0 -30px 20px;
+}
+
+.likes,
+.dislikes {
+   background: #F65A5B ;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 15px;
+   line-height: 40px;
+   min-width: 40px;
+   height: 40px;
+   border-radius: 50%;
+ margin: 0 -30px 0 40px;
+   text-align: center;
+   font-weight: 200;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: background 500ms;
+}
+
+.likes:hover,
+.dislikes:hover {
+ color: #F65A5B ;
+   background: rgba(246, 90, 91, 0.25);
+   transition: background 500ms;
+}
+
